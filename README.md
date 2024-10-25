@@ -1,5 +1,5 @@
 # Frontend-projects-from-roadmap.hs
-### Frontend projects to practice
+### Frontend projects for practice
 
 [single page cv](https://roadmap.sh/projects/single-page-cv)
 
