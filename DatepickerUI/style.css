@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.date{
+    margin-top: 30%;
+    border: 0.5px solid black;
+    padding: 10px 15px;
+
+    .calendar-icon{
+        background-color: transparent;
+        border: none;
+        margin-left: 55px;
+    }
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    width: 213.43px;
+    border: 0.5px solid black;
+    margin-top: 2px;
+    
+}
+
+.week-days{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.days span {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
