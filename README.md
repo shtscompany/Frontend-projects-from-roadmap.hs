@@ -13,4 +13,4 @@
 
 [testimonial cards](https://roadmap.sh/projects/testimonial-cards)
 
-[datepicker](https://roadmap.sh/projects/datepicker-ui).
+[datepicker](https://roadmap.sh/projects/datepicker-ui)
