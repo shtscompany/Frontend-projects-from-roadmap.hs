@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+    <label for="username">Full Name:</label>
+    <div class="form-group">
+        <input type="text" id="username" name="username" required aria-required="true" aria-describedby="usernameError" placeholder="What should we call you?">
+        <span id="usernameError" class="error-message" aria-live="polite"></span>
+    </div>
+
+    <label for="email">Email:</label>
+    <div class="form-group">
+        <input type="email" id="email" name="email" required aria-required="true" aria-describedby="emailError" placeholder="john@doe.com">
+        <span id="emailError" class="error-message" aria-live="polite"></span>
+    </div>
+
+    <label for="password">Password:</label>
+    <div class="form-group password-group">
+        <input type="password" id="password" name="password" required aria-required="true" aria-describedby="passwordError" placeholder="********">
+        <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">Show</button>
+        <span id="passwordError" class="error-message" aria-live="polite"></span>
+    </div>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <div class="form-group password-group">
+        <input type="password" id="confirm_password" name="confirm_password" required aria-required="true" aria-describedby="confirmPasswordError" placeholder="********">
+        <button type="button" class="toggle-password" onclick="toggleConfirmPasswordVisibility()">Show</button>
+        <span id="confirmPasswordError" class="error-message" aria-live="polite"></span>
+    </div>
+
+    <button class="submit">Update Profile</button>
+
+      <div class="form-footer">
+        <ul class="checklist">
+          <li>Create Account</li>
+          <li>Update Roadmap Progress</li>
+          <li>Setup Public Profile</li>
+          <li class="incomplete">Complete your first project</li>
+          <li class="incomplete">Invite your Friends</li>
+        </ul>
+      </div>
+</form>
+
+<script>
+    function togglePasswordVisibility() {
+        const passwordField = document.getElementById("password");
+        passwordField.type = passwordField.type === "password" ? "text" : "password";
+    }
+    function toggleConfirmPasswordVisibility() {
+        const confirmPasswordField = document.getElementById("confirm_password");
+        confirmPasswordField.type = confirmPasswordField.type === "password" ? "text" : "password";
+    }
+</script>
+
+</body>
+</html>
