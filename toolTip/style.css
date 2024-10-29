@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: new 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: baseline;
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+.nav-item:not(:last-child)::after {
+    content: "•"; 
+    color: lightgray; 
+    font-size: 2rem;
+    margin-left: 0.6rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem 0.5rem;
+}
+
+.tooltip {
+    position: absolute;
+    top: -150%; 
+    left: 50%;
+    transform: translateX(-50%) scale(0.8); 
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent; 
+}
+
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px) scale(1);
+}
