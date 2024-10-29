@@ -18,3 +18,5 @@
 [accessible form](https://roadmap.sh/projects/accessible-form-ui)
 
 [tooltip](https://roadmap.sh/projects/tooltip-ui)
+
+[tabs](https://roadmap.sh/projects/simple-tabs)
