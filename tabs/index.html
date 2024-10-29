@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="tab">
+        <button class="tablinks" onclick="openTab(event, 'First-Tab')">First Tab</button>
+        <button class="tablinks" onclick="openTab(event, 'Second-Tab')">Second Tab</button>
+        <button class="tablinks" onclick="openTab(event, 'Third-Tab')">Third Tab</button>
+        <button class="tablinks" onclick="openTab(event, 'Fourth-Tab')">Fourth Tab</button>
+    </nav>
+
+    <div class="contents">
+        <div id="First-Tab" class="tabcontent">
+            <h3>Welcome to the first tab!</h3>
+        </div>
+        <div id="Second-Tab" class="tabcontent">
+            <h3>Welcome to the second tab!</h3>
+        </div>
+        <div id="Third-Tab" class="tabcontent">
+            <h3>Welcome to the third tab!</h3>
+        </div>
+        <div id="Fourth-Tab" class="tabcontent">
+            <h3>Welcome to the fourth tab!</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
