@@ -1,0 +1,8 @@
+body {
+    font-family: new 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
