@@ -22,3 +22,5 @@
 [tabs](https://roadmap.sh/projects/simple-tabs)
 
 [cookie consent](https://roadmap.sh/projects/cookie-consent)
+
+[restricted textarea](https://roadmap.sh/projects/restricted-textarea)
